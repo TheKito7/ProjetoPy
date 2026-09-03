@@ -7,10 +7,17 @@ class Pessoa(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     nome = Column(String(60))
-    datanascimento = Column(Date)
+    data_nascimento = Column(Date)
+    cpf = Column(Integer)
     peso = Column(Integer)
     altura = Column(DECIMAL(10,2))
-    sexo = Column(String(1))
+    sexo = Column(String(1))   
+    cep = Column(Integer)
+    rua_logradouro = Column(String(100))
+    bairro = Column(String(20))
+    cidade = Column(String(70))
+    uf = Column(String(2)) 
+
 
     
     
